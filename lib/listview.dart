@@ -49,7 +49,13 @@ class _lwisataState extends State<lwisata> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(title: Text('Wisata', style: TextStyle(fontFamily: 'Montserrat', fontSize: 20),),
+      appBar: AppBar(
+        title: Text('Wisata',
+          style: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
+        ),
+//        backgroundColor: const Color(0xfff6f6f6),
+        titleSpacing: 10.0,
+        elevation: 0,
       ),
       backgroundColor: const Color(0xfff6f6f6), //Liat di Figma
       body: FutureBuilder<ListWisata>(
@@ -58,10 +64,11 @@ class _lwisataState extends State<lwisata> {
             if(snapshot.hasData){
               return ListView.builder(
 
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 36), //liat di figma
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 18), //liat di figma
                   itemCount: snapshot.data.wisata.length,
                   itemBuilder:(BuildContext context, index){
                   return Card(
+                    elevation: 0,
                     margin: EdgeInsets.symmetric(horizontal: 0, vertical: 10) ,
                     color: Colors.white,
 //                    decoration: new BoxDecoration(
