@@ -184,7 +184,7 @@ class _lhotelState extends State<lhotel> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Detailwisata(),
+                              builder: (context) => Detailhotel(),
                             ),
                           );
                         },
@@ -276,7 +276,7 @@ class _lkulinerState extends State<lkuliner> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Detailwisata(),
+                              builder: (context) => Detailkuliner(),
                             ),
                           );
                         },
