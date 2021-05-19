@@ -168,7 +168,7 @@ class _DetailhotelState extends State<Detailhotel> {
   @override
   Widget build(BuildContext context) {
     var assetsImage = new NetworkImage(
-        'http://dev.farizdotid.com/api/halopwk/gambar/hotel/gambar_1.jpg'); //<- Creates an object that fetches an image.
+        'http://dev.farizdotid.com/api/halopwk/gambar/hotel/hotel_harper.jpeg'); //<- Creates an object that fetches an image.
     var image = new Image(image: assetsImage, fit: BoxFit.cover);
 //    var assetImage= new Image.network('${snapshot.data.wisata[index].gambarUrl}');
     return Scaffold(
@@ -230,7 +230,7 @@ class Detailkuliner extends StatefulWidget {
   _DetailkulinerState createState() => _DetailkulinerState();
 }
 
-class _DetailkulinerState extends State<Detailhotel> {
+class _DetailkulinerState extends State<Detailkuliner> {
 //  AssetImage _imageToShow ;
   Future<ListKuliner> listkuliner;
 
@@ -275,7 +275,7 @@ class _DetailkulinerState extends State<Detailhotel> {
   @override
   Widget build(BuildContext context) {
     var assetsImage = new NetworkImage(
-        'http://dev.farizdotid.com/api/halopwk/gambar/kuliner/gambar_1.jpg'); //<- Creates an object that fetches an image.
+        'http://dev.farizdotid.com/api/halopwk/gambar/kuliner/1.jpg'); //<- Creates an object that fetches an image.
     var image = new Image(image: assetsImage, fit: BoxFit.cover);
 //    var assetImage= new Image.network('${snapshot.data.wisata[index].gambarUrl}');
     return Scaffold(
